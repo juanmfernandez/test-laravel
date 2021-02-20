@@ -34,11 +34,20 @@
                                         {{ __('Login') }}
                                     </button>
                                     </br>
-                                    @if (Route::has('password.request'))
-                                        <a class="btn btn-link" href="{{ route('password.request') }}">
-                                            {{ __('¿Olvidó su contraseña?') }}
-                                        </a>
-                                    @endif
+                                    <div class="text-center">
+                                        @if (Route::has('password.request'))
+                                            <a class="text-white forg_reg" href="{{ route('password.request') }}">
+                                                {{ __('¿Olvidó su contraseña?') }}
+                                            </a>
+                                            <br>
+                                        @endif
+                                        @if (Route::has('register'))
+                                            <a class="text-white forg_reg" href="{{ route('register') }}">
+                                                {{ __('Register now') }}
+                                            </a>
+                                            <br>
+                                        @endif
+                                    </div>
                                 </div>
                             </div>
                         </form>

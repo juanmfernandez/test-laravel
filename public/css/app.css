@@ -10389,3 +10389,8 @@ small {
   list-style: none;
   display: inline;
 }
+
+.forg_reg:hover {
+  color: #ff4530 !important;
+  text-decoration: none;
+}
